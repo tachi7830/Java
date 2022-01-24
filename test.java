@@ -1,19 +1,11 @@
 class Main {
   public static void main(String[] args) {
-    int length = 6;
-    int height = 8;
+    int number1 = 7;
+    int number2 = 2;
+    System.out.println(number1 / number2);
     
-    // 変数rectangleAreaに、四角形の面積を代入してください
-    int rectangleArea = length * height;
-    
-    // 変数rectangleAreaを出力してください
-    System.out.println(rectangleArea);
-    
-    // 変数triangleAreaに、三角形の面積を代入してください
-    int triangleArea = length * height / 2;
-    
-    // 変数triangleAreaを出力してください
-    System.out.println(triangleArea);
+    // number1をdouble型にキャストし、number2で割った値を出力してください
+    System.out.println((double)number1 / number2);
     
   }
 }
