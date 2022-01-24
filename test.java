@@ -1,22 +1,18 @@
 class Main {
   public static void main(String[] args) {
-    // int型の変数numberを定義してください
-    int number;
+    int number = 8;
     
-    // 変数numberに3を代入してください
-    number = 3;
+    // 変数numberに7をかけて、変数numberを上書きしてください
+    number *= 7;
     
     // 変数numberを出力してください
     System.out.println(number);
-
-    // String型の変数nameを定義してください
-    String name;
     
-    // 変数nameに"Wanko"を代入してください
-    name = "wanko";
+    // 変数numberの値に1を足して、変数numberを上書きしてください
+    number ++;
     
-    // 変数nameを出力してください
-    System.out.println(name);
+    // 変数numberを出力してください
+    System.out.println(number);
     
   }
 }
