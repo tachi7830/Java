@@ -1,13 +1,21 @@
 class Main {
   public static void main(String[] args) {
-    // 変数namesに、配列を代入してください
-    String[] names = {"にんじゃわんこ","ひつじ仙人", "ベイビーわんこ"};
+    // 変数numbersに、与えられた数字の配列を代入してください
+    int numbers[] = {1, 4, 6, 9, 13, 16};
     
-    // インデックス番号が0の要素を出力してください
-    System.out.println(names[0]);
+    int oddSum = 0;
+    int evenSum = 0;
     
-    // インデックス番号が2の要素を出力してください
-    System.out.println(names[2]);
-    
+    // for文を用いて、配列numbersの偶数の和と奇数の和を求めてください
+    for(int i = 0; i < numbers.length; i++){
+      if(numbers[i] % 2 == 0){
+        evenSum += numbers[i];
+      } else {
+        oddSum += numbers[i];
+      }
+    }
+
+    System.out.println("奇数の和は" + oddSum + "です");
+    System.out.println("偶数の和は" + evenSum + "です");
   }
 }
