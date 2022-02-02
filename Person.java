@@ -1,7 +1,8 @@
 class Person {
-  // インスタンスメソッドhelloを定義してください
+  // インスタンスフィールドnameを定義してください
+  public String name;
+
   public void hello() {
     System.out.println("こんにちは");
   }
-  
 }
