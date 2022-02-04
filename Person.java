@@ -1,15 +1,25 @@
 class Person {
-  public String name;
+  public String firstName;
+  public String lastName;
+  public int age;
+  public double height;
+  public double weight;
 
-  // コンストラクタがString型の引数を受け取るようにしてください
-  Person(String name) {
-    System.out.println("インスタンスが生成されました");
-    // インスタンスフィールドnameに値をセットしてください
-    this.name = name;
-    
+  Person(String firstName, String lastName, int age, double height, double weight) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.height = height;
+    this.weight = weight;
   }
-
-  public void hello() {
-    System.out.println("こんにちは、私は" + this.name + "です");
+  
+  // fullNameメソッドを定義してください
+  public String fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+  
+  // bmiメソッドを定義してください
+  public double bmi() {
+    return this.weight / this.height / this.height;
   }
 }
