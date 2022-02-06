@@ -40,7 +40,6 @@ class Person {
     this.middleName = middleName;
   }
   
-  // jobのセッターを定義してください
   public void setJob(String job) {
     this.job = job;
   }
