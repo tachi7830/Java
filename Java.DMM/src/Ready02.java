@@ -1,8 +1,15 @@
 public class Ready02 {
    public static void main(String[] args) {
-	   int[] array = {1,2,3,4,5};
-	   for (int number : array) {
-		   System.out.println("For02 = " + number);
+	  int number = 1;
+	  printNum(number);
+   }
+   
+   public static int printNum(int number) {
+	   if (number < 50) {
+		   number *= 2;
+		   System.out.println("while01 = " + number);
+		   printNum(number);
 	   }
+	   return number;
    }
 }
