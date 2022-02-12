@@ -1,15 +1,21 @@
 public class Ready02 {
    public static void main(String[] args) {
-	  int number = 1;
-	  printNum(number);
-   }
-   
-   public static int printNum(int number) {
-	   if (number < 50) {
-		   number *= 2;
-		   System.out.println("while01 = " + number);
-		   printNum(number);
+	   int number = 1;
+	   while (number < 5) {
+		   System.out.println(number * number);
+		   number++;
 	   }
-	   return number;
+	   
+	   int[] numbers = {7,20,15,40};
+	   for (int num = 0; num < numbers.length; num++) {
+		   System.out.println(numbers[num]);
+	   }
+	   
+	   for (int val : numbers) {
+		   if (val % 2 == 0) {
+			   continue;
+		   }
+		   System.out.println(val);
+	   }
    }
 }
