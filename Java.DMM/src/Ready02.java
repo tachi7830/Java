@@ -1,3 +1,4 @@
+
 public class Ready02 {
    public static void main(String[] args) {
 	   Human01 yamada = new Human01();
