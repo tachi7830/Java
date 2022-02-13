@@ -1,11 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-    	int sum = add(100,10);
-    	System.out.println("100 + 10 = " + sum);
+    	introduceOnselfe();
     }
-
-    public static int add(int x, int y) {
-    	int sum = x + y;
-    	return sum;
+    
+    public static void introduceOnselfe() {
+    	String name = "山田";
+    	int age = 32;
+    	double height = 175.0;
+    	char zodiac = '兎';
+    	
+    	System.out.println("名前は" + name + age + "歳" + "身長は" + height + "十二支は" + zodiac);
     }
 }
