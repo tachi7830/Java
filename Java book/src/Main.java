@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-    	add(100, 20);
-    	add(50,47);
+    	int sum = add(100,10);
+    	System.out.println("100 + 10 = " + sum);
     }
 
-    public static void add(int x, int y) {
+    public static int add(int x, int y) {
     	int sum = x + y;
-    	System.out.println(x + "+" + y  + "=" + sum);
+    	return sum;
     }
 }
