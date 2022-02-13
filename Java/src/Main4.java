@@ -1,17 +1,8 @@
 public class Main4 {
 	public static void main(String[] args) {
-		System.out.println("数あてゲーム");
-		int ans = new java.util.Random().nextInt(10);
-		for (int i = 0; i < 5; i++) {
-			System.out.println("画面に０～９の数字を入力してください");
-			int num = new java.util.Scanner(System.in).nextInt();
-			if (num == ans) {
-				System.out.println("アタリ！");
-				break;
-			} else {
-				System.out.println("違います");
-			}
+		int[] scores = {20,30,40,50,60};
+		for (int val : scores) {
+			System.out.println(val);
 		}
-		System.out.println("ゲームを終了します");
 	}
 }
