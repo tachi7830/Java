@@ -1,16 +1,27 @@
 
 public class Main3 {
 	public static void main(String[] args) {
-		System.out.println("ようこそ占いの館へ");
-		System.out.println("あなたの名前を入力してください");
-		String name = new java.util.Scanner(System.in).nextLine();
-		System.out.println("あなたの年齢を入力してください");
-		String ageString = new java.util.Scanner(System.in).nextLine();
-		int age = Integer.parseInt(ageString);
-		int fortune = new java.util.Random().nextInt(4);
-		fortune++;
-		System.out.println("占いの結果が出ました！");
-		System.out.println(age + "歳の" + name + "さん、あなたの運記番号は" + fortune + "です");
-		System.out.println("1:大吉 2:中吉 3:吉 4:凶");
+		int[] numbers2 = new int [20];
+		  for (int i = 0; i < numbers2.length; i++) {
+			  numbers2[i] = new java.util.Random().nextInt(6);
+		  }
+
+		  for (int i =0; i < 10; i++) {
+			  if(numbers2[i] < 10) {
+				  System.out.print(numbers2[i]);
+				  if(numbers2[i] % 2 != 0) {
+					  System.out.print(",");
+				  }
+			  }
+		  }
+		  for (int i = 10; i < 20; i++) {
+			  if(numbers2[i] < 20) {
+				  System.out.print(numbers2[i]);
+				  if (numbers2[i] % 2 == 0 && i < 20 -1) {
+						  System.out.print(",");
+					  
+				  }
+			  }
+		  }
 	}
 }
