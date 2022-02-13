@@ -1,14 +1,11 @@
 public class Main {
-    public static void methodA() {
-    	System.out.println("methodA");
-    	methodB();
+    public static void main(String[] args) {
+    	add(100, 20);
+    	add(50,47);
     }
 
-    public static void methodB() {
-    	System.out.println("methodB");
-    }
-    
-    public static void main(String[] args) {
-    	methodA();
+    public static void add(int x, int y) {
+    	int sum = x + y;
+    	System.out.println(x + "+" + y  + "=" + sum);
     }
 }
