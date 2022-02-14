@@ -1,11 +1,19 @@
 public class Main {
-    public static void main(String[] args) {
-    	mail("はじめまして" , "xxx@gmail.com" , "よろしく");
-    }
-    
-    public static void mail(String title, String address, String text) {
-    	System.out.println(address + "に、以下のメールを送信しました");
-    	System.out.println("件名:" + title);
-        System.out.println("本文:" + text);
-    }
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 2;
+
+		int total = tasu(a, b);
+		int delta = hiku(a, b);
+
+		System.out.println("足すと" + total + "、引くと" + delta);
+	}
+
+	public static int tasu(int a, int b) {
+		return (a + b);
+	}
+
+	public static int hiku(int a, int b) {
+		return (a - b);
+	}
 }
